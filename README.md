@@ -7,7 +7,7 @@ Laravel + vue + vue-router + vuex for SPA development starter-kit.
 - Vue 2.x
 - Element UI 2.x
 ## Usage
-- ```shell
+```shell
 git clone https://github.com/Partoo/laravue
 mv .env.example .env
 php artisan key:generate
