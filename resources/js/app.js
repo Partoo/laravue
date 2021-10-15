@@ -1,19 +1,17 @@
-require('./bootstrap');
-
 import Vue from 'vue'
-import 'element-ui/lib/theme-chalk/index.css'
-import ElementUI from 'element-ui'
+import Vuetify from './plugins/vuetify'
+import 'vuetify/dist/vuetify.min.css'
 import VueRouter from 'vue-router'
 import router from './Router/index'
 import store from './Store/index'
 import App from './App.vue'
 
 Vue.use(VueRouter)
-Vue.use(ElementUI)
 
 const app = new Vue({
     el: '#app',
     router,
     store,
+    vuetify: Vuetify,
     render: h => h(App)
 })
