@@ -1,8 +1,7 @@
-<template>
-    <div class="home">
-        <h3>{{count}}</h3>
-        <el-button type="primary" @click="$store.commit('INCREMENT')">累加</el-button>
-    </div>
+<template lang="pug">
+    div.home
+        h3 {{count}}
+        button(@click="$store.commit('INCREMENT')") Add
 </template>
 
 <script>
